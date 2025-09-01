@@ -11,8 +11,12 @@ import Seasons from './components/sections/Seasons'
 import Visit from './components/sections/Visit'
 import Footer from './components/layout/Footer'
 import { FEATURE_FLAGS } from './lib/constants/content'
+import { useAnalytics } from './hooks/useAnalytics'
 
 export default function HomePage() {
+  // Initialize analytics
+  useAnalytics()
+
   return (
     <main className="min-h-screen bg-cream">
       <Navigation />

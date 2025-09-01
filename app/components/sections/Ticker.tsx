@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import { HIMALAYAN_BEAUTY_TICKER } from '@/app/lib/constants/content'
+import { useAnalytics } from '@/app/hooks/useAnalytics'
 
 interface TickerProps {
   title?: string
@@ -23,6 +24,7 @@ export default function Ticker({
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const ref = useRef(null)
   const tickerRef = useRef<HTMLDivElement>(null)
+  const { trackTickerInteraction, trackImageClick, trackSectionView } = useAnalytics()
   
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -35,12 +37,31 @@ export default function Ticker({
   // Duplicate images for infinite scroll - ensure smooth loop with 8 images
   const duplicatedImages = [...images, ...images, ...images]
 
+  // Track section view when component mounts
+  useEffect(() => {
+    trackSectionView('himalayan_beauty_ticker', {
+      total_images: images.length,
+      title: title
+    })
+  }, [trackSectionView, images.length, title])
+
   const handleImageClick = (image: any) => {
     setSelectedImage(image)
+    trackImageClick(image.title, {
+      section: 'ticker',
+      image_src: image.src
+    })
+    trackTickerInteraction('image_click', {
+      image_title: image.title,
+      image_index: images.findIndex(img => img.src === image.src)
+    })
   }
 
   const closeOverlay = () => {
     setSelectedImage(null)
+    trackTickerInteraction('overlay_close', {
+      image_title: selectedImage?.title
+    })
   }
 
   const navigateToImage = (direction: 'prev' | 'next') => {
@@ -55,6 +76,11 @@ export default function Ticker({
       }
       
       setSelectedImage(images[newIndex])
+      trackTickerInteraction('navigation', {
+        direction,
+        from_image: selectedImage.title,
+        to_image: images[newIndex].title
+      })
     }
   }
 
@@ -120,8 +146,14 @@ export default function Ticker({
         <div 
           ref={tickerRef}
           className="relative overflow-hidden px-1 sm:px-2 md:px-4"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
+          onMouseEnter={() => {
+            setIsPaused(true)
+            trackTickerInteraction('pause', { reason: 'mouse_enter' })
+          }}
+          onMouseLeave={() => {
+            setIsPaused(false)
+            trackTickerInteraction('resume', { reason: 'mouse_leave' })
+          }}
         >
           <div className={`ticker-container ${isPaused ? 'paused' : ''}`}>
             <div className="ticker-track">

@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import SessionProvider from './providers/SessionProvider'
+import { Analytics } from '@vercel/analytics/next'
 import { SEO_CONFIG, SITE_SEO } from './lib/constants/seo'
 
 export const metadata: Metadata = {
@@ -80,12 +81,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-          <html lang="en">
-        <body className="bg-cream">
-          <SessionProvider>
-            {children}
-          </SessionProvider>
-        </body>
-      </html>
+    <html lang="en">
+      <body className="bg-cream">
+        <SessionProvider>
+          {children}
+        </SessionProvider>
+        <Analytics />
+      </body>
+    </html>
   )
 }
