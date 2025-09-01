@@ -41,12 +41,12 @@ export default function About() {
                 className="w-full h-full object-cover"
               >
                 <source src="/uploads/hero-video1.mp4" type="video/mp4" />
-                <Image
-                  src="/uploads/ticker7.PNG"
-                  alt="People working in the farm"
-                  fill
-                  className="object-cover"
-                />
+                                  <Image
+                    src="/uploads/ticker7.png"
+                    alt="People working in the farm"
+                    fill
+                    className="object-cover"
+                  />
               </video>
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-white">
@@ -86,99 +86,7 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* Himalayan Beauty Video Carousel - Marketing Hook */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="mb-20 px-4"
-        >
-          <div className="text-center mb-8">
-            <h3 className="text-2xl lg:text-3xl font-light text-charcoal mb-4 font-sans">
-              Experience the Himalayan Magic
-            </h3>
-            <p className="text-charcoal/70 font-light text-base lg:text-lg max-w-2xl mx-auto">
-              Where every sunrise paints the mountains golden and every breeze carries the promise of nature's bounty
-            </p>
-          </div>
-          
-          {/* Video Carousel Container */}
-          <div className="relative h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
-            {/* Background Video */}
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src="/uploads/hero-video.mp4" type="video/mp4" />
-              {/* Fallback image */}
-              <Image
-                src="/uploads/ticker2.PNG"
-                alt="Himalayan landscape"
-                fill
-                className="object-cover"
-              />
-            </video>
-            
-            {/* Cinematic Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20"></div>
-            
-            {/* Floating Content Cards */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl w-full px-4">
-                {/* Card 1 - Sunrise */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20"
-                >
-                  <div className="text-center text-white">
-                    <div className="text-2xl mb-2">🌅</div>
-                    <h4 className="font-light text-sm sm:text-base mb-1">Golden Dawn</h4>
-                    <p className="text-white/80 text-xs sm:text-sm font-light">Where mountains meet the morning sun</p>
-                  </div>
-                </motion.div>
-                
-                {/* Card 2 - Apple Orchards */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
-                  className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20"
-                >
-                  <div className="text-center text-white">
-                    <div className="text-2xl mb-2">🍎</div>
-                    <h4 className="font-light text-sm sm:text-base mb-1">Apple Paradise</h4>
-                    <p className="text-white/80 text-xs sm:text-sm font-light">Crisp apples kissed by mountain air</p>
-                  </div>
-                </motion.div>
-                
-                {/* Card 3 - Serenity */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.6 }}
-                  className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20"
-                >
-                  <div className="text-center text-white">
-                    <div className="text-2xl mb-2">🏔️</div>
-                    <h4 className="font-light text-sm sm:text-base mb-1">Pure Serenity</h4>
-                    <p className="text-white/80 text-xs sm:text-sm font-light">Nature's untouched beauty</p>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-            
-            {/* Subtle Floating Elements */}
-            <div className="absolute top-4 left-4 w-2 h-2 bg-white/30 rounded-full animate-pulse"></div>
-            <div className="absolute bottom-4 right-4 w-1.5 h-1.5 bg-white/20 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-            <div className="absolute top-1/2 left-1/4 w-1 h-1 bg-white/25 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-          </div>
-        </motion.div>
+
 
         {/* Feature Highlights - Reorganized */}
         <div className="px-4">

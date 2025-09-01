@@ -89,13 +89,18 @@ export default function Ticker({
 
   return (
     <section ref={ref} className="py-8 sm:py-12 md:py-16 lg:py-20 bg-white relative overflow-hidden">
-      {/* Parallax Background */}
+      {/* Parallax Background - Desktop Only */}
       <motion.div 
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 hidden md:block"
         style={{ y }}
       >
         <div className="w-full h-full bg-gradient-to-br from-sage/5 via-white to-sage/5"></div>
       </motion.div>
+      
+      {/* Static Background - Mobile Only */}
+      <div className="absolute inset-0 z-0 md:hidden">
+        <div className="w-full h-full bg-gradient-to-br from-sage/5 via-white to-sage/5"></div>
+      </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
@@ -104,7 +109,6 @@ export default function Ticker({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 px-4"
-          style={{ opacity }}
         >
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-light text-charcoal mb-2 sm:mb-3 md:mb-4 font-sans">
             {title}
@@ -130,11 +134,9 @@ export default function Ticker({
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <Image
+                  <img
                     src={image.src}
                     alt={image.title}
-                    width={400}
-                    height={300}
                     className="w-full h-24 sm:h-36 md:h-48 lg:h-64 object-cover transition-transform duration-500 group-hover:scale-110 ticker-image"
                   />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -166,11 +168,9 @@ export default function Ticker({
               className="relative max-w-4xl max-h-[90vh] overflow-hidden rounded-lg"
               onClick={(e) => e.stopPropagation()}
             >
-              <Image
+              <img
                 src={selectedImage.src}
                 alt={selectedImage.title}
-                width={800}
-                height={600}
                 className="w-full h-auto object-cover"
               />
               

@@ -51,32 +51,32 @@ export const HIMALAYAN_BEAUTY_TICKER = {
   title: "Mountain Majesty",
   images: [
     {
-      src: "/uploads/ticker1.png",
+      src: "/uploads/ticker1.PNG",
       title: "Mountain Orchard",
       desc: "Apple trees in bloom"
     },
     {
-      src: "/uploads/ticker2.png",
+      src: "/uploads/ticker2.PNG",
       title: "Summer Harvest",
       desc: "Fresh mountain fruits"
     },
     {
-      src: "/uploads/ticker3.png",
+      src: "/uploads/ticker3.PNG",
       title: "Autumn Colors",
       desc: "Golden harvest season"
     },
     {
-      src: "/uploads/ticker4.png",
+      src: "/uploads/ticker4.PNG",
       title: "Winter Majesty",
       desc: "Snow-capped peaks"
     },
     {
-      src: "/uploads/ticker5.png",
+      src: "/uploads/ticker5.PNG",
       title: "Himalayan Vista",
       desc: "Breathtaking mountain views"
     },
     {
-      src: "/uploads/ticker6.png",
+      src: "/uploads/ticker6.PNG",
       title: "Organic Paradise",
       desc: "Pure natural beauty"
     },
@@ -86,7 +86,7 @@ export const HIMALAYAN_BEAUTY_TICKER = {
       desc: "Authentic Himalayan experience"
     },
     {
-      src: "/uploads/ticker8.png",
+      src: "/uploads/ticker8.PNG",
       title: "Nature's Bounty",
       desc: "Rich harvest from the mountains"
     }
@@ -177,7 +177,7 @@ export const ADOPT_TREE_SECTION = {
     },
     {
       text: "Fresh Harvests",
-      image: "/uploads/ticker7.PNG"
+      image: "/uploads/ticker7.png"
     },
     {
       text: "Farm Experience",
@@ -251,7 +251,7 @@ export const VISIT_SECTION = {
       title: "Farm Tour",
       description: "Guided tour of our mountain orchards",
       icon: "🌿",
-      image: "/uploads/ticker7.PNG",
+      image: "/uploads/ticker7.png",
       features: ["2-hour guided tour", "Fruit tasting", "Mountain views", "Photo opportunities"]
     },
     {
@@ -344,6 +344,7 @@ export const ADOPT_PAGE_CONTENT = {
     },
     {
       id: 3,
+                 
       name: "Cherry Tree",
       price: 2800,
       description: "Delicate cherries from mountain orchards",
