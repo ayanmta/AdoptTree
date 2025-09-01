@@ -42,6 +42,11 @@ export interface UserProperties {
   os?: string
   country?: string
   city?: string
+  region?: string
+  timezone?: string
+  ip_address?: string
+  user_name?: string
+  user_email?: string
   referrer?: string
   utm_source?: string
   utm_medium?: string
@@ -180,7 +185,7 @@ export const trackError = (error: string, properties?: Record<string, any>) => {
 }
 
 // Get user properties
-export const getUserProperties = (): UserProperties => {
+export const getUserProperties = async (): Promise<UserProperties> => {
   if (typeof window === 'undefined') return {}
 
   const userAgent = navigator.userAgent
@@ -191,6 +196,35 @@ export const getUserProperties = (): UserProperties => {
   if (isMobile) deviceType = 'mobile'
   if (isTablet) deviceType = 'tablet'
 
+  // Get location data
+  let locationData = {}
+  try {
+    const response = await fetch('https://ipapi.co/json/')
+    if (response.ok) {
+      const data = await response.json()
+      locationData = {
+        country: data.country_name,
+        city: data.city,
+        region: data.region,
+        timezone: data.timezone,
+        ip_address: data.ip
+      }
+    }
+  } catch (error) {
+    console.log('Location data not available')
+  }
+
+  // Get stored user data
+  const storedUser = localStorage.getItem('baghari_user')
+  let userData = {}
+  if (storedUser) {
+    try {
+      userData = JSON.parse(storedUser)
+    } catch (error) {
+      console.log('Invalid stored user data')
+    }
+  }
+
   return {
     device_type: deviceType,
     browser: getBrowserInfo(userAgent),
@@ -199,6 +233,8 @@ export const getUserProperties = (): UserProperties => {
     utm_source: getUTMParameter('utm_source'),
     utm_medium: getUTMParameter('utm_medium'),
     utm_campaign: getUTMParameter('utm_campaign'),
+    ...locationData,
+    ...userData
   }
 }
 

@@ -12,6 +12,7 @@ import Visit from './components/sections/Visit'
 import Footer from './components/layout/Footer'
 import { FEATURE_FLAGS } from './lib/constants/content'
 import { useAnalytics } from './hooks/useAnalytics'
+import UserDataCollector from './components/analytics/UserDataCollector'
 
 export default function HomePage() {
   // Initialize analytics
@@ -29,6 +30,7 @@ export default function HomePage() {
       {FEATURE_FLAGS.SHOW_SEASONS_SECTION && <Seasons />}
       {FEATURE_FLAGS.SHOW_VISIT_SECTION && <Visit />}
       <Footer />
+      <UserDataCollector />
     </main>
   )
 }

@@ -12,6 +12,8 @@ interface AnalyticsData {
   topReferrers: Array<{ source: string; visits: number }>
   deviceTypes: Array<{ device: string; percentage: number }>
   userJourney: Array<{ step: string; count: number }>
+  userLocations: Array<{ country: string; city: string; visitors: number }>
+  userNames: Array<{ name: string; visits: number }>
 }
 
 export default function AnalyticsDashboard() {
@@ -56,6 +58,20 @@ export default function AnalyticsDashboard() {
           { step: 'Product View', count: 234 },
           { step: 'Adopt Tree Click', count: 89 },
           { step: 'Contact Form', count: 45 }
+        ],
+        userLocations: [
+          { country: 'India', city: 'Mumbai', visitors: 234 },
+          { country: 'India', city: 'Delhi', visitors: 189 },
+          { country: 'United States', city: 'New York', visitors: 67 },
+          { country: 'United Kingdom', city: 'London', visitors: 45 },
+          { country: 'Canada', city: 'Toronto', visitors: 34 }
+        ],
+        userNames: [
+          { name: 'Rahul Sharma', visits: 12 },
+          { name: 'Priya Patel', visits: 8 },
+          { name: 'Amit Kumar', visits: 6 },
+          { name: 'Sarah Johnson', visits: 5 },
+          { name: 'David Chen', visits: 4 }
         ]
       })
       
@@ -230,6 +246,45 @@ export default function AnalyticsDashboard() {
                   </div>
                   <span className="text-sm text-gray-600 flex-1">{step.step}</span>
                   <span className="text-sm font-medium text-gray-900">{step.count.toLocaleString()}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* User Locations */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="bg-white rounded-lg shadow p-6"
+          >
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Top Locations</h3>
+            <div className="space-y-3">
+              {analyticsData.userLocations.map((location) => (
+                <div key={`${location.city}-${location.country}`} className="flex items-center justify-between">
+                  <div>
+                    <span className="text-sm font-medium text-gray-900">{location.city}</span>
+                    <span className="text-xs text-gray-500 block">{location.country}</span>
+                  </div>
+                  <span className="text-sm font-medium text-gray-900">{location.visitors.toLocaleString()}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* User Names */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            className="bg-white rounded-lg shadow p-6"
+          >
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Returning Users</h3>
+            <div className="space-y-3">
+              {analyticsData.userNames.map((user) => (
+                <div key={user.name} className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600">{user.name}</span>
+                  <span className="text-sm font-medium text-gray-900">{user.visits} visits</span>
                 </div>
               ))}
             </div>
