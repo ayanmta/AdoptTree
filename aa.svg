@@ -1,0 +1,23 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="baghari-farms-logo">
+    <!-- Main circle outline -->
+    <circle cx="128" cy="128" r="90" stroke="#1F2326" stroke-width="6"/>
+
+    <!-- Mountain line art -->
+    <path d="M63.8562 108.825C65.176 106.829 67.5873 105.816 70.0886 106.012L81.1895 107.03C83.6908 107.226 86.1021 106.213 87.4219 104.217L97.5193 88.8021L107.617 104.217L117.714 88.8021L127.812 104.217L137.909 88.8021L148.007 104.217L158.104 88.8021L168.202 104.217L178.299 88.8021L188.397 104.217L198.494 88.8021L208.592 104.217" stroke="#1F2326" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Lettering inside the circle -->
+    <g id="b-h-f-letters" fill="#1F2326" font-family="Times New Roman, serif" font-weight="bold" font-size="30" letter-spacing="-1px">
+        <!-- B -->
+        <text x="96" y="145">B</text>
+        <!-- H -->
+        <text x="130" y="145">H</text>
+        <!-- F -->
+        <text x="164" y="145">F</text>
+    </g>
+
+    <!-- Bottom text -->
+    <text id="baghari-text" x="128" y="200" dominant-baseline="middle" text-anchor="middle" fill="#1F2326" font-family="Times New Roman, serif" font-weight="bold" font-size="20">BAGHARI</text>
+    <text id="farms-text" x="128" y="220" dominant-baseline="middle" text-anchor="middle" fill="#1F2326" font-family="Times New Roman, serif" font-weight="bold" font-size="20">FARMS</text>
+</g>
+</svg>

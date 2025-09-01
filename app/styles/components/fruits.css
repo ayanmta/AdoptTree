@@ -1,0 +1,190 @@
+/* Fruits Section Component Styles */
+
+.fruits {
+  padding: var(--spacing-3xl) 0;
+  background: var(--color-cream);
+}
+
+.fruits__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.fruits__header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.fruits__badge {
+  display: inline-block;
+  background: rgba(156, 175, 136, 0.2);
+  backdrop-filter: blur(10px);
+  color: var(--color-sage);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(156, 175, 136, 0.3);
+  margin-bottom: var(--spacing-md);
+}
+
+.fruits__title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  color: var(--color-sage);
+  margin-bottom: var(--spacing-lg);
+}
+
+.fruits__description {
+  font-size: 1.25rem;
+  color: var(--color-charcoal);
+  opacity: 0.7;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.fruits__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.fruits__product {
+  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px 5px 20px 5px;
+  box-shadow: 
+    0 20px 40px rgba(139, 115, 85, 0.15),
+    0 8px 16px rgba(139, 115, 85, 0.1),
+    inset 0 1px 0 rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.fruits__product:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 30px 60px rgba(139, 115, 85, 0.25),
+    0 12px 24px rgba(139, 115, 85, 0.15),
+    inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.fruits__product-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 15px 3px 15px 3px;
+  margin-bottom: var(--spacing-md);
+  transition: transform 0.5s ease;
+}
+
+.fruits__product:hover .fruits__product-image {
+  transform: scale(1.1);
+}
+
+.fruits__product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.fruits__product-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-sage);
+}
+
+.fruits__product-price {
+  background: linear-gradient(135deg, var(--color-coral) 0%, var(--color-orange) 100%);
+  color: var(--color-white);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.fruits__product-description {
+  color: var(--color-charcoal);
+  opacity: 0.7;
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.5;
+}
+
+.fruits__product-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.fruits__product-feature {
+  background: rgba(156, 175, 136, 0.1);
+  color: var(--color-sage);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+}
+
+.fruits__product-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-sm);
+  font-size: 0.75rem;
+  color: var(--color-charcoal);
+  opacity: 0.6;
+}
+
+.fruits__product-stat {
+  text-align: center;
+}
+
+.fruits__product-stat-label {
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fruits {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .fruits__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .fruits__title {
+    font-size: 2.5rem;
+  }
+  
+  .fruits__description {
+    font-size: 1.125rem;
+  }
+  
+  .fruits__product {
+    padding: var(--spacing-md);
+  }
+  
+  .fruits__product-image {
+    height: 10rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .fruits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .fruits__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

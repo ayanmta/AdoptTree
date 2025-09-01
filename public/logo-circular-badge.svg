@@ -1,0 +1,12 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular Badge -->
+  <circle cx="100" cy="100" r="45" fill="none" stroke="#2C3E50" stroke-width="2"/>
+  
+  <!-- Stylized Leaf -->
+  <path d="M100 60 Q130 75 130 100 Q130 125 100 140 Q70 125 70 100 Q70 75 100 60" fill="#2C3E50"/>
+  <path d="M100 60 L100 140" stroke="#F5F5DC" stroke-width="1.5" fill="none"/>
+  
+  <!-- Text -->
+  <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+  <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">FARM</text>
+</svg>

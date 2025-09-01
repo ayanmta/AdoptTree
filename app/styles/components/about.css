@@ -1,0 +1,103 @@
+/* About Section Component Styles */
+
+.about {
+  padding: var(--spacing-3xl) 0;
+  background: var(--color-white);
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.about__header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.about__title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--color-sage);
+  margin-bottom: var(--spacing-md);
+}
+
+.about__description {
+  font-size: 1.25rem;
+  color: var(--color-charcoal);
+  opacity: 0.7;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.about__feature {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px 5px 20px 5px;
+  box-shadow: 
+    0 20px 40px rgba(139, 115, 85, 0.15),
+    0 8px 16px rgba(139, 115, 85, 0.1),
+    inset 0 1px 0 rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about__feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 30px 60px rgba(139, 115, 85, 0.25),
+    0 12px 24px rgba(139, 115, 85, 0.15),
+    inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.about__feature-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.about__feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-sage);
+  margin-bottom: var(--spacing-md);
+}
+
+.about__feature-description {
+  color: var(--color-charcoal);
+  opacity: 0.7;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .about__features {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .about__feature {
+    padding: var(--spacing-lg);
+  }
+  
+  .about__title {
+    font-size: 2rem;
+  }
+  
+  .about__description {
+    font-size: 1.125rem;
+  }
+}

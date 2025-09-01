@@ -1,0 +1,82 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Variation 1: Stylized Apple Leaf -->
+  <g transform="translate(50, 50)">
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Variation 1: Apple Leaf</text>
+    <!-- Leaf with apple stem -->
+    <path d="M80 40 Q120 50 120 90 Q120 130 80 140 Q40 130 40 90 Q40 50 80 40" fill="#2C3E50"/>
+    <path d="M100 40 L100 140" stroke="#F5F5DC" stroke-width="1.5" fill="none"/>
+    <path d="M100 30 L100 40" stroke="#2C3E50" stroke-width="3" fill="none"/>
+    <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+    <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">FARM</text>
+  </g>
+
+  <!-- Variation 2: Mountain Leaf -->
+  <g transform="translate(250, 50)">
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Variation 2: Mountain Leaf</text>
+    <!-- Leaf with mountain peaks -->
+    <path d="M60 140 L80 120 L100 130 L120 120 L140 140 L140 160 L60 160 Z" fill="#2C3E50"/>
+    <path d="M80 120 Q100 100 120 120" stroke="#F5F5DC" stroke-width="2" fill="none"/>
+    <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+    <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">FARM</text>
+  </g>
+
+  <!-- Variation 3: Circular Badge -->
+  <g transform="translate(450, 50)">
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Variation 3: Circular Badge</text>
+    <circle cx="100" cy="100" r="45" fill="none" stroke="#2C3E50" stroke-width="2"/>
+    <!-- Stylized leaf -->
+    <path d="M100 60 Q130 75 130 100 Q130 125 100 140 Q70 125 70 100 Q70 75 100 60" fill="#2C3E50"/>
+    <path d="M100 60 L100 140" stroke="#F5F5DC" stroke-width="1.5" fill="none"/>
+    <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+    <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">FARM</text>
+  </g>
+
+  <!-- Variation 4: Minimalist Tree -->
+  <g transform="translate(650, 50)">
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Variation 4: Minimalist Tree</text>
+    <!-- Simple tree -->
+    <rect x="95" y="120" width="10" height="30" fill="#2C3E50"/>
+    <path d="M70 120 Q100 80 130 120" stroke="#2C3E50" stroke-width="4" fill="none"/>
+    <circle cx="100" cy="110" r="4" fill="#2C3E50"/>
+    <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+    <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">FARM</text>
+  </g>
+
+  <!-- Variation 5: Organic Leaf -->
+  <g transform="translate(50, 250)">
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Variation 5: Organic Leaf</text>
+    <!-- Organic leaf shape -->
+    <path d="M100 40 C130 50 140 80 130 110 C120 130 100 140 80 130 C60 120 70 90 80 70 C90 50 100 40 100 40" fill="#2C3E50"/>
+    <path d="M100 40 Q100 80 100 130" stroke="#F5F5DC" stroke-width="2" fill="none"/>
+    <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+    <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">FARM</text>
+  </g>
+
+  <!-- Variation 6: Geometric Leaf -->
+  <g transform="translate(250, 250)">
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Variation 6: Geometric Leaf</text>
+    <!-- Geometric leaf -->
+    <polygon points="100,40 130,60 130,100 100,140 70,100 70,60" fill="#2C3E50"/>
+    <path d="M100 40 L100 140" stroke="#F5F5DC" stroke-width="2" fill="none"/>
+    <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+    <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">FARM</text>
+  </g>
+
+  <!-- Variation 7: Mountain Range -->
+  <g transform="translate(450, 250)">
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Variation 7: Mountain Range</text>
+    <!-- Mountain peaks -->
+    <path d="M60 140 L80 100 L100 120 L120 90 L140 110 L140 140 L60 140 Z" fill="#2C3E50"/>
+    <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+    <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">FARM</text>
+  </g>
+
+  <!-- Variation 8: Simple Dot -->
+  <g transform="translate(650, 250)">
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Variation 8: Simple Dot</text>
+    <!-- Simple dot with text -->
+    <circle cx="100" cy="90" r="20" fill="#2C3E50"/>
+    <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+    <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">FARM</text>
+  </g>
+</svg>

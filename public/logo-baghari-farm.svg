@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simple Leaf Icon -->
+  <path d="M100 40 Q140 60 140 100 Q140 140 100 160 Q60 140 60 100 Q60 60 100 40" fill="#2C3E50"/>
+  
+  <!-- Leaf Vein -->
+  <path d="M100 40 L100 160" stroke="#F5F5DC" stroke-width="2" fill="none"/>
+  
+  <!-- Text: BAGHARI -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+  
+  <!-- Text: FARM -->
+  <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">FARM</text>
+</svg>

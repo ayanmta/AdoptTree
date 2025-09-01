@@ -1,0 +1,9 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mountain Leaf -->
+  <path d="M60 140 L80 120 L100 130 L120 120 L140 140 L140 160 L60 160 Z" fill="#2C3E50"/>
+  <path d="M80 120 Q100 100 120 120" stroke="#F5F5DC" stroke-width="2" fill="none"/>
+  
+  <!-- Text -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">BAGHARI</text>
+  <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">FARM</text>
+</svg>

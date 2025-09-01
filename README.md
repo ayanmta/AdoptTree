@@ -1,93 +1,74 @@
-# AdoptTree
+# Baghari Farm - Design Demo
 
-A modern, elegant farm website built with Next.js and Strapi CMS, featuring glass-morphism design and GraphQL integration.
+A Next.js demo showcasing the design theme and visual identity for Baghari Farm, a Himalayan organic farm with tree adoption services.
 
-## 🌱 About
+## 🎨 Design Features
 
-AdoptTree is a sustainable farming platform that showcases beautiful farm products with a modern, glass-morphism design. The project demonstrates best practices in modern web development with Next.js, TypeScript, and GraphQL.
+- **Himalayan-inspired color palette** with earth tones and natural colors
+- **Organic, handcrafted design elements** with floating cards and natural borders
+- **Smooth animations** using Framer Motion
+- **Responsive layout** that works on all devices
+- **Storytelling-focused sections** highlighting the farm's journey
+- **Tree adoption showcase** with interactive elements
+- **Product gallery** with hover effects
 
-## 🚀 Features
+## 🚀 Getting Started
 
-- **Elegant Glass-Morphism Design** - Modern, transparent UI elements with backdrop blur effects
-- **Farm Theme** - Beautiful nature-inspired color palette and typography
-- **Responsive Design** - Optimized for all devices
-- **Next.js 15** - Latest features with App Router
-- **Framer Motion** - Smooth animations and transitions
-- **GraphQL Integration** - Ready for Strapi CMS data fetching
-- **TypeScript** - Full type safety
-
-## 📁 Project Structure
-
-```
-AdoptTree/
-├── frontend/           # Next.js frontend application
-│   ├── src/
-│   │   ├── app/       # Next.js App Router
-│   │   ├── components/ # React components
-│   │   └── lib/       # Utilities and configurations
-│   ├── public/        # Static assets
-│   └── package.json   # Frontend dependencies
-└── README.md          # This file
-```
-
-## 🛠️ Tech Stack
-
-- **Frontend**: Next.js 15, TypeScript, Tailwind CSS
-- **CMS**: Strapi (Headless CMS)
-- **GraphQL**: Apollo Client
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Node.js 18+ (Note: Strapi requires Node.js 18-22)
-- npm or yarn
-
-### Frontend Setup
-
-1. **Navigate to the frontend directory**
-   ```bash
-   cd frontend
-   ```
-
-2. **Install dependencies**
+1. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Set up environment variables**
-   Create a `.env.local` file in the frontend directory:
-   ```env
-   NEXT_PUBLIC_STRAPI_GRAPHQL_URL=http://localhost:1337/graphql
-   NEXT_PUBLIC_STRAPI_URL=http://localhost:1337
-   ```
-
-4. **Run the development server**
+2. **Run the development server:**
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**
+3. **Open your browser:**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 📖 Documentation
+## 🎯 Design Elements Showcased
 
-For detailed documentation, see the [frontend README](./frontend/README.md).
+### Color Palette
+- **Earth**: #8B7355 (Warm Himalayan soil)
+- **Stone**: #A8A8A8 (Mountain granite)
+- **Terracotta**: #D2691E (Sunset on peaks)
+- **Forest**: #2F4F2F (Pine forests)
+- **Cream**: #F5F5DC (Handmade paper)
 
-## 🤝 Contributing
+### Typography
+- **Playfair Display**: Elegant serif for headlines
+- **Inter**: Clean sans-serif for body text
+- **Dancing Script**: Handwritten feel for accents
+- **Crimson Text**: Literary serif for quotes
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+### Interactive Elements
+- **Floating cards** with backdrop blur
+- **Organic borders** with natural curves
+- **Hover animations** on product cards
+- **Scroll-triggered animations**
+- **Gradient overlays** on hero images
 
-## 📄 License
+## 📱 Sections Included
 
-This project is licensed under the MIT License.
+1. **Hero Section** - Full-screen mountain backdrop with floating text
+2. **Story Section** - Two-column layout with image and floating card
+3. **Tree Adoption** - Gradient background with interactive cards
+4. **Products** - Grid layout with hover effects
+5. **Contact** - Call-to-action section
 
-## 🆘 Support
+## 🛠️ Built With
 
-For support and questions, please open an issue in the repository. 
+- **Next.js 14** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first styling
+- **Framer Motion** - Smooth animations
+- **Lucide React** - Beautiful icons
+
+## 📸 Image Credits
+
+All images are from Unsplash and are used for demonstration purposes only.
+
+---
+
+This demo showcases the visual direction and design patterns for the Baghari Farm website. The design emphasizes organic, handcrafted elements while maintaining modern web standards and accessibility. 
